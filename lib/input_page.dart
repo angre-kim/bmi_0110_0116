@@ -205,7 +205,14 @@ class _InputPageState extends State<InputPage> {
                 ),
               ],
             )),
-            ButtomButton()
+            ButtomButton(
+              buttonTitle: '재계산',
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => ResultsPage(),),);
+              },
+
+            )
           ],
         ));
   }
