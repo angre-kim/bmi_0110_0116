@@ -8,7 +8,7 @@ import 'result_page.dart';
 enum Gender {
   male,
   female,
-}//
+} //
 
 class InputPage extends StatefulWidget {
   @override
@@ -206,12 +206,17 @@ class _InputPageState extends State<InputPage> {
               ],
             )),
             GestureDetector(
-              onTap: (){
+              onTap: () {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => ResultsPage()));
               },
               child: Container(
-                child: Text('계산하기'),
+                child: Center(
+                  child: Text(
+                    '계산하기',
+                    style: kLargeButtonTextStyle,
+                  ),
+                ),
                 color: kBottomContainerColour,
                 margin: EdgeInsets.only(top: 10.0),
                 width: double.infinity,
