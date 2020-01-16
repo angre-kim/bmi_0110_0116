@@ -39,6 +39,11 @@ class ResultsPage extends StatelessWidget {
                     '18.1',
                     style: kBMITextStyle,
                   ),
+                  Text(
+                                        'BMI 수치는 정상이나...',
+                    textAlign: TextAlign.center,
+                    style: kBodyTextStyle,
+                  ),
                 ],
               ),
             ),
