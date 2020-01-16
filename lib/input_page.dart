@@ -221,14 +221,11 @@ final String buttonTitle;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {
-        Navigator.push(context,
-            MaterialPageRoute(builder: (context) => ResultsPage()));
-      },
+      onTap: onTap,
       child: Container(
         child: Center(
           child: Text(
-            '계산하기',
+            buttonTitle,
             style: kLargeButtonTextStyle,
           ),
         ),
