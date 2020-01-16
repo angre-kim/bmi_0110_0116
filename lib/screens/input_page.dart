@@ -212,7 +212,7 @@ class _InputPageState extends State<InputPage> {
               buttonTitle: '계산하기',
               onTap: () {
                 CalculatorBrain calc = CalculatorBrain(height: height, weight: weight);
-
+//                   calc.getResult()  하기 위해서 result 페이지서 값을 받아오기 위한 작업필요
                 Navigator.push(
                   context,
                   MaterialPageRoute(
