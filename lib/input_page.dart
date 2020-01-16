@@ -3,6 +3,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'reuseable.dart';
 import 'icon_content.dart';
 import 'constants.dart';
+import 'result_page.dart';
 
 enum Gender {
   male,
@@ -204,11 +205,18 @@ class _InputPageState extends State<InputPage> {
                 ),
               ],
             )),
-            Container(
-              color: kBottomContainerColour,
-              margin: EdgeInsets.only(top: 10.0),
-              width: double.infinity,
-              height: kBottomContainerHeight,
+            GestureDetector(
+              onTap: (){
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => ResultsPage()));
+              },
+              child: Container(
+                child: Text('계산하기'),
+                color: kBottomContainerColour,
+                margin: EdgeInsets.only(top: 10.0),
+                width: double.infinity,
+                height: kBottomContainerHeight,
+              ),
             )
           ],
         ));
