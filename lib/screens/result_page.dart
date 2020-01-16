@@ -4,8 +4,18 @@ import 'package:flutter/material.dart';
 import '../constants.dart';
 import '../components/reuseable.dart';
 import '../components/bottom_button.dart';
+import 'package:bmi_calculator_0110/calculating_brain.dart';
 
 class ResultsPage extends StatelessWidget {
+
+  ResultsPage({@required this.interpretation, @required this.bmiResult, @required this.resultText});
+
+  final String bmiResult;
+  final String resultText;
+  final String interpretation;
+
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
