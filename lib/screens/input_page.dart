@@ -207,8 +207,8 @@ class _InputPageState extends State<InputPage> {
                 ),
               ],
             )),
-            ButtomButton(
-              buttonTitle: '재계산',
+            BottomButton(
+              buttonTitle: '계산하기',
               onTap: () {
                 Navigator.push(
                   context,

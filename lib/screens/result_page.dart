@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../constants.dart';
 import '../components/reuseable.dart';
+import '../components/bottom_button.dart';
 
 class ResultsPage extends StatelessWidget {
   @override
@@ -13,7 +14,7 @@ class ResultsPage extends StatelessWidget {
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.stretch,//
+        crossAxisAlignment: CrossAxisAlignment.stretch, //
         children: <Widget>[
           Expanded(
             child: Container(
@@ -34,13 +35,13 @@ class ResultsPage extends StatelessWidget {
                   Text(
                     '정상',
                     style: kResultTextStyle,
-                                      ),
+                  ),
                   Text(
                     '18.1',
                     style: kBMITextStyle,
                   ),
                   Text(
-                                        'BMI 수치는 정상이나...',
+                    'BMI 수치는 정상이나...',
                     textAlign: TextAlign.center,
                     style: kBodyTextStyle,
                   ),
@@ -48,6 +49,12 @@ class ResultsPage extends StatelessWidget {
               ),
             ),
           ),
+          BottomButton(
+            buttonTitle: '재계산',
+            onTap: () {
+              Navigator.pop(context); //되돌아가는 것이므로
+            },
+          )
         ],
       ),
     );
