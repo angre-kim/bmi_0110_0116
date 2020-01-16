@@ -1,3 +1,3 @@
-# ¼½¼Ç12- BMI Calculator
+# ì„¹ì…˜12- BMI Calculator
 
-# 125°­-Maps ¼³¸í 
+# 125ê°•Â­-Maps ì„¤ëª…
