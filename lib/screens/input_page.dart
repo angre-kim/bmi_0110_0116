@@ -6,6 +6,7 @@ import '../constants.dart';
 import '../screens/result_page.dart';
 import '../components/round_icon_button.dart';
 import '../components/bottom_button.dart';
+import 'package:bmi_calculator_0110/calculating_brain.dart';
 
 enum Gender {
   male,
@@ -210,6 +211,8 @@ class _InputPageState extends State<InputPage> {
             BottomButton(
               buttonTitle: '계산하기',
               onTap: () {
+                CalculatorBrain calc = CalculatorBrain(height: height, weight: weight);
+
                 Navigator.push(
                   context,
                   MaterialPageRoute(
