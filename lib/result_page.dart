@@ -34,7 +34,11 @@ class ResultsPage extends StatelessWidget {
                   Text(
                     '정상',
                     style: kResultTextStyle,
-                  )
+                                      ),
+                  Text(
+                    '18.1',
+                    style: kBMITextStyle,
+                  ),
                 ],
               ),
             ),
