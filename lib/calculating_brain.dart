@@ -9,8 +9,8 @@ class CalculatorBrain {
   double _bmi;
 
   String calculateBMI() {    //메소드 만들기
-    double _bmi = weight / pow(height / 100, 2);
-    _bmi.toStringAsFixed(1);
+    _bmi = weight / pow(height / 100, 2);
+    return _bmi.toStringAsFixed(1);
   }
 
   String getResult() {     //메소드 만들기
