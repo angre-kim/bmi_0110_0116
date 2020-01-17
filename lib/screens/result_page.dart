@@ -7,14 +7,14 @@ import '../components/bottom_button.dart';
 import 'package:bmi_calculator_0110/calculating_brain.dart';
 
 class ResultsPage extends StatelessWidget {
-
-  ResultsPage({@required this.interpretation, @required this.bmiResult, @required this.resultText});
+  ResultsPage(
+      {@required this.interpretation,
+      @required this.bmiResult,
+      @required this.resultText});
 
   final String bmiResult;
   final String resultText;
   final String interpretation;
-
-
 
   @override
   Widget build(BuildContext context) {
@@ -45,15 +45,15 @@ class ResultsPage extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
                   Text(
-                    '정상',
+                    resultText,
                     style: kResultTextStyle,
                   ),
                   Text(
-                    '18.1',
+                    bmiResult,
                     style: kBMITextStyle,
                   ),
                   Text(
-                    'BMI 수치는 정상이나...',
+                    interpretation,
                     textAlign: TextAlign.center,
                     style: kBodyTextStyle,
                   ),
